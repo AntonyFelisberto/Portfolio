@@ -1,10 +1,12 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export const NavBar = () => {
-    const [activeLink, setActiveLink]
+    const [activeLink, setActiveLink] = useState('home');
+    const [scolled, setScrolled] = useState(false);
+
     return(
         <Navbar expand="lg">
         <Container>
@@ -24,9 +26,9 @@ export const NavBar = () => {
             </Nav>
             <span className='navbar-text'>
                 <div className='social-icon'>
-                    <a href='#'><img src={} alt=""/></a>
-                    <a href='#'><img src={} alt=""/></a>
-                    <a href='#'><img src={} alt=""/></a>
+                    <a href='#'><img src={''} alt=""/></a>
+                    <a href='#'><img src={''} alt=""/></a>
+                    <a href='#'><img src={''} alt=""/></a>
                 </div>
                 <button className='vvd' onclick={
                     () => console.log('connect')}><span>Conectar se</span>
