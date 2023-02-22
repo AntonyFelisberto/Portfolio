@@ -4,7 +4,7 @@
 
 :root{
     --header-height:3rem;
-    --hue-color: 250;
+    --hue-color: 230;
 
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second:hsl(var(--hue-color), 69%, 61%);
@@ -260,7 +260,7 @@ img{
 }
 
 .home_scroll{
-
+    display: none;
 }
 
 .home_scroll-button{
@@ -304,4 +304,87 @@ img{
     font-size: 1.25rem;
     margin-left: var(--mb-0-5);
     transition: .3s;
+}
+
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+}
+
+.about_img{
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.about_description{
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about_info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about_info-title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color:var(--title-color)
+}
+
+.about_info-name{
+    font-size: var(--smaller-font-size);
+}
+
+.about_info-title,.about_info-name{
+    display: block;
+    text-align: center;
+}
+
+.about_buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.skills_container{
+    row-gap: 0;
+}
+
+.skills_header{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+}
+
+.skills_icon,.sills_arrow{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.skills_icon{
+    margin-right: var(--mb-0-75);
+}
+
+.skills_title{
+    font-size: var(--h3-font-size);
+}
+
+.skills_subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.skills_arrow{
+    margin-left: auto;
+    transition: .4s;
+}
+
+.skills_title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
 }
