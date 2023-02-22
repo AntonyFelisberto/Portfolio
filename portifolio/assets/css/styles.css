@@ -383,6 +383,10 @@ img{
     transition: .4s;
 }
 
+.skills_list{
+    row-gap: 1.5rem;
+}
+
 .skills_title{
     display: flex;
     justify-content: space-between;
@@ -398,4 +402,54 @@ img{
 .skill_porcentage{
     height:5px;
     border-radius:.25rem;
+}
+
+.skill_bar{
+    background-color: var(--first-color-lighter);
+}
+
+.skills_percentage{
+    display: block;
+    background-color: var(--first-color);
+}
+
+/* AUMENTO DAS BARRAS DO HTML NO PERFIL */
+.skills_html{
+    width: 60%;
+}
+
+.skills_css{
+    width: 40%;
+}
+
+.skills_js{
+    width: 90%;
+}
+
+.skills_angular{
+    width: 90%;
+}
+
+.skills_ts{
+    width: 90%;
+}
+
+.skills_angJs{
+    width: 90%;
+}
+
+.skills_java{
+    width: 90%;
+}
+
+.skills_C{
+    width: 90%;
+}
+
+.skills_mysql{
+    width: 90%;
+}
+
+.skills_sqlite{
+    width: 90%;
 }
