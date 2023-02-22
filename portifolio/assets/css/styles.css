@@ -388,3 +388,14 @@ img{
     justify-content: space-between;
     margin-bottom: var(--mb-0-5);
 }
+
+.skills_name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skill_bar,
+.skill_porcentage{
+    height:5px;
+    border-radius:.25rem;
+}
