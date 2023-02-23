@@ -34,4 +34,16 @@ function linkAction(){
 }
 navLink.forEach(n=> n.addEventListener("click",linkAction))
 
-const skillsContent = 
+function toggleSkills(elem){
+    const skillsContent = document.getElementsByClassName('skills_content')
+
+    let itemClass = elem.parentNode.className;
+
+    for(i=0;i < skillsContent.length;i++){
+        skillsContent[i].className = "skills_content skills_close"
+    }
+
+    if(itemClass === "skills_content skills_close"){
+        elem.parentNode.className = "skills_content skills_open"
+    }
+}

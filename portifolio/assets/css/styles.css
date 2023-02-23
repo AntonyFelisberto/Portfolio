@@ -385,9 +385,10 @@ img{
 
 .skills_list{
     row-gap: 1.5rem;
+    padding-left: 2.5rem;
 }
 
-.skills_title{
+.skills_titles{
     display: flex;
     justify-content: space-between;
     margin-bottom: var(--mb-0-5);
