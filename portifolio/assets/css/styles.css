@@ -398,13 +398,13 @@ img{
     font-weight: var(--font-medium);
 }
 
-.skill_bar,
-.skill_porcentage{
+.skills_bar,
+.skills_percentage{
     height:5px;
     border-radius:.25rem;
 }
 
-.skill_bar{
+.skills_bar{
     background-color: var(--first-color-lighter);
 }
 
@@ -423,33 +423,51 @@ img{
 }
 
 .skills_js{
-    width: 90%;
+    width: 40%;
 }
 
 .skills_angular{
-    width: 90%;
+    width: 55%;
 }
 
 .skills_ts{
-    width: 90%;
+    width: 60%;
 }
 
 .skills_angJs{
-    width: 90%;
+    width: 30%;
 }
 
 .skills_java{
-    width: 90%;
+    width: 80%;
+}
+
+.skills_py{
+    width: 10%;
 }
 
 .skills_C{
-    width: 90%;
+    width: 40%;
 }
 
 .skills_mysql{
-    width: 90%;
+    width: 60%;
 }
 
 .skills_sqlite{
-    width: 90%;
+    width: 20%;
+}
+
+.skills_close .skills_list{
+    height:0;
+    overflow: hidden;
+}
+
+.skills_open .skills_list{
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+}
+
+.skills_open .skills_arrow{
+    transform: rotate(-180deg);
 }
