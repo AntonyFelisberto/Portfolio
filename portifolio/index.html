@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--BIBLIUOTECA UNIICONS-->
+    <!--BIBLIOTECA UNIICONS-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <link rel="stylesheet" href="">
     
     <link rel="stylesheet" href="assets/css/styles.css">
 
+    <script src="assets/js/angularJS/angular.min.js"></script>
+    <script src="assets/js/angularJS/angular-route.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
     <title>Portifolio</title>
 </head>
-<body>
+<body ng-app="mainApp" >
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav_logo">Antony</a>
@@ -61,7 +65,7 @@
         </nav>
     </header>
 
-    <main class="main">
+    <main class="main"  ng-controller="myMainController">
         <section class="home secttion" id="home">
             <div class="home_container container grid">
                 <div class="home_content grid">
@@ -89,8 +93,8 @@
                 </div>
                 <div class="home_data">
                     <h1 class="home_title">Ola, Bem Vindo ao meu portifólio</h1>
-                    <h3 class="home_subtitle">Meu nome é Antony dos santos felisberto, sou FullStack Developer</h3>
-                    <p class="home_description">Atualmente trabalho para a empresa TCS - Tata Consultancy Services com aplicações web e ambiente de implantações no Azure DevOps, sou formado em análise e desenvolvimento de sistemas.</p>
+                    <h3 class="home_subtitle">Meu nome é Antony, sou FullStack Developer</h3>
+                    <p class="home_description">Atualmente trabalho para a empresa TCS - Tata Consultancy Services atuando em demandas evolutivas para a empresa vale com aplicações web e ambiente de implantações no Azure DevOps, sou formado em análise e desenvolvimento de sistemas.</p>
                     <a href="#contact" class="button button--flex">
                         Entrar em Contato <i class="uil uil-message button_icon"></i>
                     </a>
@@ -112,19 +116,19 @@
             <div class="about_container container grid">
                 <img src="assets//img/imagensDoSistema/sobre.jfif">
                 <div class="about_data">
-                    <p class="about_description">ESCREVER</p>
+                    <p class="about_description">Meu nome é Antony dos santos felisberto, tenho {{idade}} anos, sempre tive curiosidade por tecnologia e por esse motivo escolhi me tornar um desenvolvedor, sempre busco estar estudando novas técnologias sendo elas novas ou antigas, atualmente estou tabalhando para a TCS realizando demandas evolutivas para a empresa Vale</p>
                     <div class="about_info">
                         <div>
-                            <span class="about_info-title">+1</span>
-                            <span class="about_info-name">Anos de<br>Experiencia como desenvolvedor FullStack</span>
+                            <span class="about_info-title">+{{tempoDeServicos}}</span>
+                            <span class="about_info-name">Ano de<br>Experiencia como desenvolvedor Full Stack</span>
                         </div>
                         <div>
-                            <span class="about_info-title">+1</span>
-                            <span class="about_info-name">Completados de<br>Experiencia com aplicações web e ambientes DevOps</span>
+                            <span class="about_info-title">+{{tempoDeServicos}}</span>
+                            <span class="about_info-name">Ano Completados de<br>Experiencia com aplicações web e ambientes DevOps</span>
                         </div>
                         <div>
-                            <span class="about_info-title">+1</span>
-                            <span class="about_info-name">Trabalhando <br>para a empresa TCS</span>
+                            <span class="about_info-title">+{{tempoDeServicos}}</span>
+                            <span class="about_info-name">Ano Trabalhando <br>para a empresa TCS</span>
                         </div>
                     </div>
                     <div class="about_buttons">
@@ -274,19 +278,19 @@
 
             <div class="qualification_container container">
                 <div class="qualification_tabs">
-                    <div class="qualification_button button--flex">
+                    <div class="qualification_button button--flex" data-target="#education">
                         <i class="uil uil-graduation-cap qualification_icon"></i>
                         Educação
                     </div>
 
                     <div class="qualification_button button--flex">
-                        <i class="uil uil-briefcase-alt qualification_icon"></i>
+                        <i class="uil uil-briefcase-alt qualification_icon" data-target="#work"></i>
                         Trabalhos
                     </div>
                 </div>
                 <div class="qualification_sections">
 
-                    <div class="qualification_content">
+                    <div class="qualification_content" data-content id="education">
                         <div class="qualification_data">
                             <div>
                                 <h3 class="qualification_title">Analise e Desenvolvimento de Sistemas</h3>
@@ -307,9 +311,25 @@
                             <div></div>
                             <div>
                                 <span class="qualification_rounder"></span>
-                                <span class="qualification_line"></span>    <!--QUANDO ESSE BLOCO FICA POR ULTIMO É COMENTADO ESSA LINHA-->
+                                <span class="qualification_line"></span>   <!-- QUANDO ESSE BLOCO FICA POR ULTIMO É COMENTADO ESSA LINHA-->
                             </div>
                             <div>
+                                <h3 class="qualification_title">Estagiário</h3>
+                                <span class="qualification_subtitle">Londrina - Tata Consultancy Services</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2021 - 2021
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="qualification_data">
+                            <div></div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <!--<span class="qualification_line"></span>    QUANDO ESSE BLOCO FICA POR ULTIMO É COMENTADO ESSA LINHA-->
+                            </div>
+                            <div  style="margin-top: .5rem;">
                                 <h3 class="qualification_title">Analista de Sistemas Junior</h3>
                                 <span class="qualification_subtitle">Londrina - Tata Consultancy Services</span>
                                 <div class="qualification_calendar">
@@ -318,7 +338,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        <!--
                         <div class="qualification_data">
                             <div>
                                 <h3 class="qualification_title">Analise e Desenvolvimento de Sistemas</h3>
@@ -339,7 +359,7 @@
                             <div></div>
                             <div>
                                 <span class="qualification_rounder"></span>
-                                <!--<span class="qualification_line"></span>-->
+                                <span class="qualification_line"></span>
                             </div>
                             <div>
                                 <h3 class="qualification_title">Analista de Sistemas Junior</h3>
@@ -349,11 +369,133 @@
                                     2021 - Emprego Atual
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="services section" id="services">
+            <h2 class="section_title">Services</h2>
+            <span class="section_subtitle"></span>
+            <div class="services_container container grid">
+                <div class="services_content">
+                    <div>
+                        <i class="uil uil-web-grid services_icon"></i>
+                        <h3 class="services_title">Ui/Ux<br>Designer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services_button">
+                        View More
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </span>
+
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <h4 class="services_modal-title">Ui/Ux <br> Designer</h4>
+                            <i class="uil uil-times services_modal-close"></i>
+
+                            <ul class="services_modal-services grid">
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>I develop the user interface</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>I develop the user interface</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>I develop the user interface</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>I develop the user interface</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services_content">
+                    <div>
+                        <i class="uil uil-arrow services_icon"></i>
+                        <h3 class="services_title">FrontEnd <br>Developer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services_button">
+                        View More
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </span>
+
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <h4 class="services_modal-title">FrontEnd <br>Developer</h4>
+                            <i class="uil uil-times services_modal-close"></i>
+
+                            <ul class="services_modal-services grid">
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>I develop the user interface</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>I develop the user interface</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>I develop the user interface</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>I develop the user interface</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services_content">
+                    <div>
+                        <i class="uil uil-pen services_icon"></i>
+                        <h3 class="services_title">Branding <br>Developer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services_button">
+                        View More
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </span>
+
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <h4 class="services_modal-title">Branding <br>Developer</h4>
+                            <i class="uil uil-times services_modal-close"></i>
+
+                            <ul class="services_modal-services grid">
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>I develop the user interface</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>I develop the user interface</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>I develop the user interface</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>I develop the user interface</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </main>
     <!--<div id="certificados"></div>-->
 
