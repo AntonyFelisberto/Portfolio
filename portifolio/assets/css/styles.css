@@ -454,6 +454,10 @@ img{
     width: 30%;
 }
 
+.skills_ajax{
+    width: 25%;
+}
+
 .skills_java{
     width: 80%;
 }
@@ -472,6 +476,18 @@ img{
 
 .skills_sqlite{
     width: 20%;
+}
+
+.skills_vbsc{
+    width: 25%;
+}
+
+.skills_docker{
+    width: 30%;
+}
+
+.skills_json{
+    width: 100%;
 }
 
 .skills_close .skills_list{
