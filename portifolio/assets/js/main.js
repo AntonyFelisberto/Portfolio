@@ -4,12 +4,12 @@ const navClose = document.getElementById('nav-close');
 const navLink = document.querySelector(".nav_link")
 
 window.onload = function(){
-    let divItens = document.querySelector("#certificados")
+    let divItens = document.querySelector(".swiper-wrapper")
 
     fetch("../../json/dadosImages.json").then((response)=>{
         response.json().then((dados) =>{
             dados.certificados.map((certificados)=>{
-                divItens.innerHTML+="<div class='item'><img class='box-filme' alt='' srcset='' src='"+certificados.nome+"'/></div>"
+                divItens.innerHTML+= "<div class='portifolio_content grid swiper-slide'><img src='"+certificados.nome+"' alt='' class='portifolio_img'><!--<div class='portifolio_data'><h3 class='portifolio_title'>Modern Website</h3><p class='portifolio_description'>my description to that</p><a href='' class='button button--flex button--small portifolio_button'>Demo<i class='uil uil-arrow-right button_icon'></i></a></div>--></div>"
             })
         })
     })
@@ -70,3 +70,18 @@ modalCloses.forEach((modalClose)=>{
         })
     })
 })
+
+var swiper = new Swiper(".mySwiper", {
+    cssMode:true,
+    loop: true,
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+});
+

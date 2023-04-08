@@ -10,12 +10,15 @@
     <link rel="stylesheet" href="">
     
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <script src="assets/js/angularJS/angular.min.js"></script>
     <script src="assets/js/angularJS/angular-route.min.js"></script>
     <script src="assets/js/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.1.1/swiper-bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9.1.1/modules/scrollbar/scrollbar.min.css" rel="stylesheet">
 
     <title>Portifolio</title>
 </head>
@@ -550,21 +553,26 @@
         <section class="portifolio section" id="portifolio">
             <h2 class="section_title">PORTIFÓLIO</h2>
             <span class="section_subtitle"></span>
-            <div class="portifolio_container container">
-                <div>
-                    <div class="portifolio_content grid">
-                        
-                    </div>
+            <div class="portfolio_container container swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="portifolio_content grid swiper-slide">
+                    <img src='assets/img/certificados/azure 1.jpg' alt='' class='portifolio_img'>
+                  </div>
                 </div>
+                <div class="swiper-button-next" style="top: 18.75rem; position:absolute;"></div>
+                <div class="swiper-button-prev" style="top: 18.75rem; position:absolute;"></div>
             </div>
         </section>
-    </main>
-    
 
+    </main>
 
     <!-- JAVASCRIPTS -->
     <script src=""></script>
     <script src="assets/js/main.js"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 </body>
 </html>
