@@ -50,8 +50,8 @@ function toggleSkills(elem){
 
     let itemClass = elem.parentNode.className;
 
-    for(i=0;i < skillsContent.length;i++){
-        skillsContent[i].className = "skills_content skills_close"
+    for(const element of skillsContent){
+        element.className = "skills_content skills_close"
     }
 
     if(itemClass === "skills_content skills_close"){
@@ -81,7 +81,7 @@ modalCloses.forEach((modalClose)=>{
     })
 })
 
-var swiperCertifications = new Swiper(".mySwiper", {
+let swiperCertifications = new Swiper(".mySwiper", {
     cssMode:true,
     loop: true,
 
@@ -95,7 +95,7 @@ var swiperCertifications = new Swiper(".mySwiper", {
     },
 });
 
-var swiperClients = new Swiper(".testimonial_container", {
+let swiperClients = new Swiper(".testimonial_container", {
     cssMode:true,
     loop: true,
     spaceBetween:48,

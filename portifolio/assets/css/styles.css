@@ -960,7 +960,7 @@ textarea{
 }
 
 ::-webkit-scrollbar{
-    width: 0.60re;
+    width: 0.60rem;
     background-color: var(--scroll-bar-color);
     border-radius: .5rem;
 }
@@ -979,6 +979,9 @@ textarea{
 }
 .section_subtitle.appears{
     display: block;
+}
+#appears_patterns{
+    display: none;
 }
 
 @media screen and (max-width: 350px){
@@ -1045,6 +1048,9 @@ textarea{
     .swiper-button-prev.appears,.swiper-button-next.appears{
         display: block;
     }
+    #appears_patterns{
+        display: block;
+    }
     .section_subtitle.appears{
         display: none;
     }
@@ -1069,7 +1075,7 @@ textarea{
         padding: 0 1rem;
     }
     .nav{
-        height: calc(var(--header-height)+1.5rem)
+        height: calc(var(--header-height) + 1.5rem)
     }
     .nav_icon,.nav_close,.nav_toggle{
         display: none;
