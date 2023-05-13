@@ -1,5 +1,22 @@
 {
     "certificados":[
+        {"nome":"assets/img/certificados/angularjs 2.jpg"},
+        {"nome":"assets/img/certificados/CertificadoDeConclusao_DevOps for Data Scientists_page-0001.jpg"},
+        {"nome":"assets/img/certificados/CertificadoDeConclusao_Docker Essential Training 4 Storage and Volumes_page-0001.jp"},
+        {"nome":"assets/img/certificados/CertificadoDeConclusao_Docker Essential Training 6 Security_page-0001.jpg"},
+        {"nome":"assets/img/certificados/CertificadoDeConclusao_Sustentabilidade Ambiental Um Guia para Lideres Empresariais_page-0001.jpg"},
+        {"nome":"assets/img/certificados/CertificateOfCompletion_Business Storytelling with C.C. Chapman_page-0001.jpg"},
+        {"nome":"assets/img/certificados/CertificateOfCompletion_Data Visualization Storytelling_page-0001.jpg"},
+        {"nome":"assets/img/certificados/CertificateOfCompletion_DevOps Foundations Containers_page-0001.jpg"},
+        {"nome":"assets/img/certificados/CertificateOfCompletion_Docker for Data Scientists (1)_page-0001.jpg"},
+        {"nome":"assets/img/certificados/CertificateOfCompletion_Docker for Data Scientists_page-0001.jpg"},
+        {"nome":"assets/img/certificados/CertificateOfCompletion_How to Present and Stay on Point_page-0001.jpg"},
+        {"nome":"assets/img/certificados/CertificateOfCompletion_Implementing Creative Feedback the WinWin Way_page-0001.jpg"},
+        {"nome":"assets/img/certificados/CertificateOfCompletion_Running a Design Business Presentation Skills_page-0001.jpg"},
+        {"nome":"assets/img/certificados/CertificateOfCompletion_Selling with Stories Part 1 What Makes a Great Story_page-0001.jpg"},
+        {"nome":"assets/img/certificados/CertificateOfCompletion_Using Docker and .NET Core_page-0001.jpg"},
+
+        
         {"nome":"assets/img/certificados/azure 2.jpg"},
         {"nome":"assets/img/certificados/CertificateOfCompletion_ Azure _page-0001.jpg"},
         {"nome":"assets/img/certificados/CertificadoDeConclusao_Descubra o Azure DevOps_page-0001.jpg"},
