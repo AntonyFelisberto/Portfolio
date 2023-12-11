@@ -1,6 +1,5 @@
 {
     "certificados":[
-        {"nome":"assets/img/certificados/microsoft.jpg"},
         {"nome":"assets/img/certificados/m10_page-0001.jpg"},
         {"nome":"assets/img/certificados/m11_page-0001.jpg"},
         {"nome":"assets/img/certificados/m12_page-0001.jpg"},
@@ -36,6 +35,7 @@
         {"nome":"assets/img/certificados/m8_page-0001.jpg"},
         {"nome":"assets/img/certificados/m9_page-0001.jpg"},
         {"nome":"assets/img/certificados/ac directory.jpg"},
+        {"nome":"assets/img/certificados/azure 1.jpg"},
         {"nome":"assets/img/certificados/active directory.jpg"},
         {"nome":"assets/img/certificados/actives directory.jpg"},
         {"nome":"assets/img/certificados/ais.jpg"},
