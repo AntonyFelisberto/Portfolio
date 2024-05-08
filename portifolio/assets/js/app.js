@@ -16,6 +16,9 @@ app.controller('myMainController', function msgController($scope,$translate) {
     $scope.idade = (new Date().getFullYear() - 2002);
     $scope.tempoDeServicos = new Date().getFullYear() - 2021
 
+    const jobDate = new Date().getFullYear() - 2024
+    $scope.tempoDeServicosCIT = jobDate;
+
     var _this = this;
 
     this.versions = {
