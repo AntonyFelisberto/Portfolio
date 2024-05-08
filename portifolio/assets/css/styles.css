@@ -184,6 +184,32 @@ img{
     color: var(--first-color);
 }
 
+.nav_list select {
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0; 
+    margin: 0;
+    font-size: var(--small-font-size);
+}
+  
+.nav_list select option {
+    background-color: #fff; 
+    color: #333; 
+}
+  
+.nav_list select:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
 @media screen and (max-width: 767px){
     .nav_menu{
         position:fixed;
@@ -219,6 +245,7 @@ img{
 .nav_icon{
     font-size: 1.2rem;
 }
+
 .nav_close{
     position: absolute;
     right: 1.3rem;
