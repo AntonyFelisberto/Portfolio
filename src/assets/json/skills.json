@@ -1,0 +1,122 @@
+{
+    "skills": [
+        {
+            "category": "Frontend Developer",
+            "skills": [
+                { "name": "HTML", "percentage": "60%" },
+                { "name": "CSS", "percentage": "50%" },
+                { "name": "JavaScript", "percentage": "50%" },
+                { "name": "Angular", "percentage": "55%" },
+                { "name": "TypeScript", "percentage": "60%" },
+                { "name": "AngularJS", "percentage": "30%" },
+                { "name": "AJAX", "percentage": "25%" }
+            ]
+        },
+        {
+            "category": "Backend Developer",
+            "skills": [
+                { "name": "Java", "percentage": "80%" },
+                { "name": "Python", "percentage": "60%" },
+                { "name": "C", "percentage": "40%" },
+                { "name": "MySQL", "percentage": "60%" },
+                { "name": "SQLite", "percentage": "20%" },
+                { "name": "VBScript", "percentage": "25%" },
+                { "name": "Docker", "percentage": "30%" },
+                { "name": "JSON", "percentage": "100%" }
+            ]
+        }
+    ],
+    "appears_patterns": {
+    "title": "Padrões para Projetos",
+    "skills": [
+      {
+        "name": "Formação",
+        "description": "Formado em curso superior de ADS"
+      },
+      {
+        "name": "MVC",
+        "description": "Base no padrão Model View Controller"
+      },
+      {
+        "name": "Metodologias Ágeis",
+        "description": "Scrum e Kanban"
+      },
+      {
+        "name": "GIT",
+        "description": "Conhecimento de Versionamento"
+      },
+      {
+        "name": "Nível Intermediário Inglês",
+        "description": "Conhecimento da língua Inglesa, escrita e verbal"
+      },
+      {
+        "name": "Ciclo de Desenvolvimento",
+        "description": "Conhecimento prático sobre ciclo de desenvolvimento de software e observability driven development"
+      },
+      {
+        "name": "Manutenção de Sistemas",
+        "description": "Realização de manutenções de layout de sistemas"
+      },
+      {
+        "name": "Desenvolvimento para Web",
+        "description": "Experiência com desenvolvimento para web"
+      },
+      {
+        "name": "Desenvolvimento Ágil",
+        "description": "Desenvolvimento ágil de software"
+      },
+      {
+        "name": "Integração de Sistemas",
+        "description": "Experiência com integrações entre sistemas e vivência em desenvolvimento de webapp"
+      },
+      {
+        "name": "Desenvolvimento para Web Multiplataformas",
+        "description": "Desenvolvimento para multiplataformas"
+      },
+      {
+        "name": "Programação Orientada a Objetos",
+        "description": "Base sólida para padrões orientados a objeto"
+      },
+      {
+        "name": "LGPD",
+        "description": "Aplicar as regras para atendimento a LGPD"
+      },
+      {
+        "name": "Segurança de Aplicações",
+        "description": "Garantir escalabilidade, disponibilidade e segurança das aplicações"
+      },
+      {
+        "name": "Estruturas de Arquivos JSON",
+        "description": "Atuação com estruturas de arquivos JSON"
+      },
+      {
+        "name": "Comunicação com Clientes",
+        "description": "Boa comunicação social e comunicações escritas"
+      },
+      {
+        "name": "Arquitetura de Aplicações",
+        "description": "Avaliar, definir e executar um plano contínuo de evolução arquitetônica das aplicações"
+      },
+      {
+        "name": "Trabalho em Equipe",
+        "description": "Capacidade de trabalhar de forma independente e em equipe"
+      },
+      {
+        "name": "Resolução de Problemas",
+        "description": "Excelentes habilidades de resolução de problemas, pensamento crítico, comunicação, arquitetura de soluções, facilidade com lógica e algoritmo"
+      },
+      {
+        "name": "Rest",
+        "description": "Requisição de dados em geral"
+      },
+      {
+        "name": "Código e Arquitetura Limpa",
+        "description": "Códigos bem construídos e entendíveis e com padrões atuais"
+      },
+      {
+        "name": "Boas Práticas de Programação",
+        "description": "Arquiteturas de código sólidas"
+      }
+    ]
+  }
+}
