@@ -1,0 +1,49 @@
+<section class="skills section" id="skills">
+  <h2 class="section_title">Habilidades</h2>
+  <span class="section_subtitle">Minhas Habilidades</span>
+
+  <div class="skills_container container grid">
+    <div *ngFor="let data of skillsData.skills; let i = index">
+      <div class="skills_content" [ngClass]="{'skills_open': activeSkillIndex === i, 'skills_close': activeSkillIndex !== i}">
+        <div class="skills_header" (click)="toggleSkills(i)">
+          <i class="uil uil-brackets-curly skills_icon"></i>
+          <div>
+            <h1 class="skills_title">{{ data.category }}</h1>
+            <span class="skills_subtitle">{{ yearsOfExperience }} anos</span>
+          </div>
+          <i class="uil uil-angle-down skills_arrow"></i>
+        </div>
+        <div class="skills_list grid">
+          <div class="skills_data" *ngFor="let skill of data.skills">
+            <div class="skills_titles">
+              <h3 class="skills_name">{{ skill.name }}</h3>
+              <span class="skills_number">{{ skill.percentage }}</span>
+            </div>
+            <div class="skills_bar">
+              <span class="skills_percentage" [ngStyle]="{'width': skill.percentage}"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="appears_patterns" class="skills_content" [ngClass]="{'skills_open': activeSkillIndex === 'appears', 'skills_close': activeSkillIndex !== 'appears'}">
+      <div class="skills_header" (click)="toggleSkills('appears')">
+        <i class="uil uil-process skills_icon"></i>
+        <div>
+          <h1 class="skills_title">{{ skillsData.appears_patterns?.title }}</h1>
+          <span class="skills_subtitle">{{ yearsOfExperience }}</span>
+        </div>
+        <i class="uil uil-angle-down skills_arrow"></i>
+      </div>
+      <div class="skills_list grid" *ngFor="let skill of skillsData.appears_patterns?.skills">
+        <div class="skills_data">
+          <div class="skills_titles">
+            <h3 class="skills_name">{{ skill.name }}</h3>
+            <span class="skills_number">{{ skill.description }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
