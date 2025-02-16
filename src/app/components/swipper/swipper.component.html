@@ -1,23 +1,11 @@
-<section class="portifolio section" id="portifolio">
-  <div class="portfolio_container container swiper mySwiper">
-      <div class="swiper-wrapper">
-      <div class="portifolio_content grid swiper-slide">
-          <img src='assets/img/certificados/microsoft.jpg' alt='' class='portifolio_img'>
-      </div>
-      </div>
-  </div>
-</section>
-
-
-
-<section class="portifolio section">
-  <h2 class="section_title">{{title}}</h2>
+<section class="portifolio section" [id]="id">
+  <h2 class="section_title">{{ title }}</h2>
   <span class="section_subtitle appears">Deslize para esquerda ou direita para ver outros</span>
   <div class="portfolio_container container swiper mySwiper">
       <div class="swiper-wrapper new">
-      <div class="portifolio_content grid swiper-slide">
-          <img src='assets/img/certificados/2062460_Agile for Beginners_Completion_Certificate_page-0001.jpg' alt='' class='portifolio_img'>
-      </div>
+        <div *ngFor="let cert of certificacoesProg" class="portifolio_content grid swiper-slide">
+          <img [src]="cert" alt="" class="portifolio_img">
+        </div>
       </div>
       <div class="swiper-button-next appears" style="top: 18.75rem; position:absolute;"></div>
       <div class="swiper-button-prev appears" style="top: 18.75rem; position:absolute;"></div>

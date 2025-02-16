@@ -7,12 +7,19 @@ import { Observable } from 'rxjs';
 })
 export class PortifolioService {
 
-  private jsonUrl = 'assets/json/skills.json';
+  private jsonUrl = 'assets/json/';
 
   constructor(private http: HttpClient) {}
 
   getSkills(): Observable<any> {
-    return this.http.get<any>(this.jsonUrl);
+    return this.http.get<any>(this.jsonUrl.concat("skills.json"));
   }
 
+  getCertificationsProg(): Observable<any> {
+    return this.http.get(this.jsonUrl.concat("certificacoes_prog.json"));
+  }
+
+  getCertificationsAdv(): Observable<any> {
+    return this.http.get(this.jsonUrl.concat("certificacoes_adv.json"));
+  }
 }
