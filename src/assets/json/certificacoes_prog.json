@@ -1,14 +1,10 @@
 {
   "certificados": [
-    {"nome": "ai/dominando gpt.jpg"},
-    {"nome": "ai/chat gpt idiomas.jpg"},
-    {"nome": "ai/chatgpt para apps.jpg"},
-    {"nome": "ai/gpt avancado.jpg"},
-    {"nome": "ai/gpt marketing.jpg"},
-    {"nome": "ai/gpt para desenvolvedores.jpg ai/gpt para inovar.jpg"},
-    {"nome": "ai/gpt para negocios.jpg ai/gpt plus.jpg"},
-    {"nome": "ai/inteligencia artificial e computacional.png"},
-    {"nome": "ai/prompt enginner gpt.jpg"}
+    {"nome": "languages/espanhol_A1.jpg"},
+    {"nome": "languages/espanhol_A1.jpg"},
+    {"nome": "languages/espanhol_A1.jpg"},
+    {"nome": "languages/espanhol_A1.jpg"},
+    {"nome": "languages/espanhol_A1.jpg"}
   ]
 }
 

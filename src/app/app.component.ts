@@ -3,6 +3,7 @@ import { NavigationComponent } from "./components/navigation/navigation.componen
 import { MainComponent } from "./components/main/main.component";
 import { CommonModule } from '@angular/common';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,

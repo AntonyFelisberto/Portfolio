@@ -1,13 +1,13 @@
 <section class="portifolio section" [id]="id">
-  <h2 class="section_title">{{ title }}</h2>
+  <h2 class="section_title swipper">{{ title }}</h2>
   <span class="section_subtitle appears">Deslize para esquerda ou direita para ver outros</span>
-  <div class="portfolio_container container swiper mySwiper">
+  <div class=" container swiper mySwiper">
       <div class="swiper-wrapper new">
-        <div *ngFor="let cert of certificacoesProg" class="portifolio_content grid swiper-slide">
-          <img [src]="cert" alt="" class="portifolio_img">
+        <div *ngFor="let cert of certificacoesProg" class="swiper-slide">
+          <swiper-container [navigation]="verifyScreenSize()" css-mode="true">
+            <swiper-slide *ngFor="let cert of certificacoesProg"><img [src]="cert" alt=""></swiper-slide>
+          </swiper-container>
         </div>
       </div>
-      <div class="swiper-button-next appears" style="top: 18.75rem; position:absolute;"></div>
-      <div class="swiper-button-prev appears" style="top: 18.75rem; position:absolute;"></div>
   </div>
 </section>

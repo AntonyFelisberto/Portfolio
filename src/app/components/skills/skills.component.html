@@ -32,15 +32,14 @@
         <i class="uil uil-process skills_icon"></i>
         <div>
           <h1 class="skills_title">{{ skillsData.appears_patterns?.title }}</h1>
-          <span class="skills_subtitle">{{ yearsOfExperience }}</span>
+          <span class="skills_subtitle">{{ yearsOfExperience }} anos</span>
         </div>
         <i class="uil uil-angle-down skills_arrow"></i>
       </div>
       <div class="skills_list grid" *ngFor="let skill of skillsData.appears_patterns?.skills">
         <div class="skills_data">
           <div class="skills_titles">
-            <h3 class="skills_name">{{ skill.name }}</h3>
-            <span class="skills_number">{{ skill.description }}</span>
+            <h3 class="skills_name">{{ skill.name }}: {{ skill.description }}</h3>
           </div>
         </div>
       </div>

@@ -76,3 +76,7 @@
 .skills_open .skills_arrow{
   transform: rotate(-180deg);
 }
+
+#appears_patterns{
+  display: none;
+}
