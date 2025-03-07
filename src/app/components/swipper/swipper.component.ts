@@ -11,7 +11,6 @@ import { PortifolioService } from '../../portifolio_services/portifolio.service'
 })
 export class SwipperComponent implements OnInit {
   @Input() title: string = '';
-  @Input() id: string = '';
   certificacoesProg: string[] = [];
   certificacoesAdv: string[] = [];
 

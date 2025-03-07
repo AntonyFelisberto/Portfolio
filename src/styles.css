@@ -159,6 +159,42 @@ img{
   background-color: var(--body-color);
 }
 
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover{
+  background-color: var(--first-color-alt);
+}
+
+.button_icon{
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: .3s;
+}
+
+.button--flex{
+  display: inline-flex;
+  align-items: center;
+}
+
+.active-link{
+  color: var(--first-color);
+}
+
+.scroll-header{
+  box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+}
+
+.show-scroll{
+  bottom: 5rem;
+}
+
 ::-webkit-scrollbar{
   width: 0.60rem;
   background-color: var(--scroll-bar-color);

@@ -24,3 +24,16 @@
   width:232px;
   justify-self: center;
 }
+
+.button--white{
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+.button--white:hover{
+  background-color: #fff;
+}
+
+a.button.button--flex.button--white{
+  margin-bottom: var(--mb-0-75);
+}

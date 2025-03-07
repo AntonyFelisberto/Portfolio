@@ -23,6 +23,7 @@
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   column-gap: 1.5rem;
+  margin-bottom: var(--mb-1);
 }
 
 .qualification_title{
@@ -33,7 +34,7 @@
 .qualification_subtitle{
   display: inline-block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
+  margin-bottom: 5px;
 }
 
 .qualification_calendar{
