@@ -29,6 +29,7 @@ export class SwipperComponent implements OnInit {
       );
     });
 
+
     this.portifolioService.getCertificationsAdv().subscribe(dados => {
       this.certificacoesAdv = dados.certificados.map((cert: { nome: string }) =>
         `${this.LOCATION}${encodeURIComponent(cert.nome)}`

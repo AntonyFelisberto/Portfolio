@@ -3,9 +3,12 @@
   <span class="section_subtitle appears">Deslize para esquerda ou direita para ver outros</span>
   <div class=" container swiper mySwiper">
       <div class="swiper-wrapper new">
-        <div *ngFor="let cert of certificacoesProg" class="swiper-slide">
-          <swiper-container [navigation]="verifyScreenSize()" css-mode="true">
+        <div class="swiper-slide" >
+          <swiper-container [navigation]="verifyScreenSize()" css-mode="true" *ngIf="title === 'PORTIFÓLIO'">
             <swiper-slide *ngFor="let cert of certificacoesProg"><img [src]="cert" alt=""></swiper-slide>
+          </swiper-container>
+          <swiper-container [navigation]="verifyScreenSize()" css-mode="true" *ngIf="title === 'CERTIFICAÇÕES EXTRAS'">
+            <swiper-slide *ngFor="let cert of certificacoesAdv"><img [src]="cert" alt=""></swiper-slide>
           </swiper-container>
         </div>
       </div>

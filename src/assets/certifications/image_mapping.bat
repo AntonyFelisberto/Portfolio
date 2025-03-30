@@ -30,7 +30,7 @@ for /r %%F in (*.jpg *.png *.jpeg *.gif *.bmp) do (
         echo     {"nome": "!CLEAN_PATH!"} >> %OUTPUT_FILE%
         set FIRST=0
     ) else (
-        echo     ,{"nome": "!CLEAN_PATH!"} >> %OUTPUT_FILE%
+        echo     {"nome": "!CLEAN_PATH!"}, >> %OUTPUT_FILE%
     )
 )
 
