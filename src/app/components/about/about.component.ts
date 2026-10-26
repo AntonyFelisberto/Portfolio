@@ -11,7 +11,7 @@ export class AboutComponent implements OnInit{
   
   age: number = 0;
   yearsOfExperience: number = 0;
-  yearsOfExperienceCIT: number = 0;
+  yearsOfExperienceNava: number = 0;
   
   ngOnInit(): void {
     this.age = new Date().getFullYear() - 2002
