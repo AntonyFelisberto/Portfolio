@@ -25,16 +25,21 @@ export class SwipperComponent implements OnInit {
   private loadCertifications(): void {
     this.portifolioService.getCertificationsProg().subscribe(dados => {
       this.certificacoesProg = dados.certificados.map((cert: { nome: string }) =>
-        `${this.LOCATION}${encodeURIComponent(cert.nome)}`
+        this.certificationImageUrl(cert.nome)
       );
     });
 
 
     this.portifolioService.getCertificationsAdv().subscribe(dados => {
       this.certificacoesAdv = dados.certificados.map((cert: { nome: string }) =>
-        `${this.LOCATION}${encodeURIComponent(cert.nome)}`
+        this.certificationImageUrl(cert.nome)
       );
     });
+  }
+
+  private certificationImageUrl(name: string): string {
+    const encodedPath = name.split('/').map(segment => encodeURIComponent(segment)).join('/');
+    return `${this.LOCATION}${encodedPath}`;
   }
 
   verifyScreenSize():boolean{
