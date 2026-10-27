@@ -1,4 +1,4 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, Input, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, CUSTOM_ELEMENTS_SCHEMA, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PortifolioService } from '../../portifolio_services/portifolio.service';
 
@@ -16,7 +16,10 @@ export class SwipperComponent implements OnInit {
 
   private readonly LOCATION = 'assets/certifications/';
 
-  constructor(private portifolioService: PortifolioService) {}
+  constructor(
+    private portifolioService: PortifolioService,
+    private changeDetectorRef: ChangeDetectorRef
+  ) {}
 
   ngOnInit(): void {
     this.loadCertifications();
@@ -27,6 +30,7 @@ export class SwipperComponent implements OnInit {
       this.certificacoesProg = dados.certificados.map((cert: { nome: string }) =>
         this.certificationImageUrl(cert.nome)
       );
+      this.changeDetectorRef.markForCheck();
     });
 
 
@@ -34,6 +38,7 @@ export class SwipperComponent implements OnInit {
       this.certificacoesAdv = dados.certificados.map((cert: { nome: string }) =>
         this.certificationImageUrl(cert.nome)
       );
+      this.changeDetectorRef.markForCheck();
     });
   }
 
