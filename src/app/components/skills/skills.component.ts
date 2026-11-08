@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { PortifolioService } from './../../portifolio_services/portifolio.service';
 
 @Component({
@@ -14,12 +14,16 @@ export class SkillsComponent implements OnInit {
   yearsOfExperience: number = 0;
   activeSkillIndex: number | string | null = null;
 
-  constructor(private portifolioService: PortifolioService) {}
+  constructor(
+    private portifolioService: PortifolioService,
+    private changeDetectorRef: ChangeDetectorRef
+  ) {}
 
   ngOnInit(): void {
     this.portifolioService.getSkills().subscribe({
       next: (data) => {
         this.skillsData = data;
+        this.changeDetectorRef.markForCheck();
       },
       error: (err) => {
         console.log(err);
